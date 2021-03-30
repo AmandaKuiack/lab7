@@ -12,7 +12,10 @@ do {
     for(let item of courseList){
         if(item.code.includes(userInput) === true) {
             alert(`Yes I am taking the course ${item.code} - ${item.course}`);
-        } else if (courseList[0].includes(userInput) === false) {
-                courseList.push({code: userInput, course: null});
-                console.log(`${userInput} successfully added into Course List`);
+        } else {
+            input.push(userInput)
         }
+    if(courseList[0].includes(userInput) === false) {
+        courseList.push({code: userInput, course: null});
+        console.log(`${userInput} successfully added into Course List`);
+    }
