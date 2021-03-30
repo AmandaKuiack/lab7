@@ -13,10 +13,10 @@ nav {
     text-align: center;
 }
 a:link {
-    color: lightsteelblue;
+    color: #334259;
 }
 a:visited {
-    color: darkblue;
+    color: rgb(63, 3, 3);
 }
 h1.index {
     color: #EDDDD0;
@@ -49,11 +49,13 @@ h1 {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     border-bottom: solid black 1px;
+    padding-left: 1rem;
 }
 .course-unbordered {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
+    padding-left: 1rem;
 }
 li {
     list-style: none;
