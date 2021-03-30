@@ -1,0 +1,124 @@
+body {
+    background-color: #E5E5DC;
+}
+.container {
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+.header {
+    background-color: #DB504A;
+}
+nav {
+    text-align: center;
+}
+a:link {
+    color: lightsteelblue;
+}
+a:visited {
+    color: darkblue;
+}
+h1.index {
+    color: #EDDDD0;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+h1 {
+    color: #EDDDD0;
+    text-align: center;
+}
+.footer {
+    background-color: #DB504A;
+    text-align: center;
+    margin: 10px
+}
+.grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 100px 2fr 1fr;
+    color: #334259;
+    margin: 10px;    
+}
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+.course-bordered {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    border-bottom: solid black 1px;
+}
+.course-unbordered {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+li {
+    list-style: none;
+}
+.title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding:20px 0px;
+}
+.image {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+.one {
+    grid-column: 1/2;
+    grid-row: 2/3;    
+}
+.two {
+    grid-column: 1/2;
+    grid-row: 3/4;    
+}
+.bcitlogoschool {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 600px){
+    .small-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+    .header {        
+        height: 120px;
+        margin: 10px 5px 5px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .course-bordered {
+        border-bottom: 1px solid black;
+        padding-left: 5px;
+    }
+    .course-bordered {
+        border-bottom: 1px solid black;
+        padding-left: 5px;
+    }
+    .course- {
+        padding-left: 5px;
+    }
+    .bcitlogoschool {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer {
+        background-color: #DB504A;
+        align-items: center;
+        margin: 5px;
+
+    }
+
+}
