@@ -5,3 +5,13 @@ let courseList = [
 ];
 
 let userInput;
+let userInput;
+do {
+    userInput= prompt("Please enter the 4 digit course code: ");
+} while(isNaN(userInput) === true); 
+    let input = []
+    for(let item of courseList){
+        if(item.code.includes(userInput) === true) {
+            alert(`Yes I am taking the course ${item.code} - ${item.course}`);
+        } 
+        
